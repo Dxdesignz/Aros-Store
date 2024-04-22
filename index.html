@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aros Store</title>
+    <!---------- favicon link -------->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png" />
+    <!---------- favicon link -------->
+    <!---------- link css ------------>
+    <link rel="stylesheet" href="style.css" />
+    <!---------- link css ------------>
+    <!---------- Font Icon ----------->
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css" />
+    <!---------- Font Icon ----------->
+    <!---------- swiper js ----------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!---------- swiper js ----------->
+    <!-----------jquery link --------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-----------jquery link --------->
+    <!-----------Aos    link --------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-----------Aos    link --------->
+</head>
+
+<body>
+    <!-----------Top Area ------------>
+    <a href="#"><i class="fi fi-rr-caret-up" id="upper"></i></a>
+    <!-----------Top Area ------------>
+
+    <!-----------Animation Area ------>
+    <div class="loading">
+        <img src="img/grocery.gif" alt="">
+    </div>
+    <!-----------Animation Area ------>
+    <!-----------Top Heading Link ---->
+    <section class="top-heading" id="top-heading">
+        <div class="container">
+            <div class="left-data">
+                <p>(+1)124-587-963</p>
+                <div class="vl"></div>
+                <div class="language-select">
+                    <select id="language-dropdown">
+                        <option value="lo">Location</option>
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                    </select>
+                </div>
+            </div>
+            <a href="#" class="s-offer">tell a friend about upto flat get 50% off</a>
+            <p class="e-header">www.aros store.com</p>
+        </div>
+    </section>
+    <!-----------Top Heading Link ---->
+
+    <!-----------Header Link --------->
+    <section class="header" id="header">
+        <div class="container">
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+            <div class="navbar">
+                <div class="link">
+                    <a href="#" id="h">home</a>
+                    <a href="#trending">categories</a>
+                    <a href="#pro-offer">offer</a>
+                    <a href="#pro">product</a>
+                    <a href="#ser" id="s">service</a>
+                </div>
+            </div>
+            <div class="icon">
+                <i class="fi fi-br-search" id="search-i"></i>
+                <i class="fi fi-br-menu-burger" id="menu"></i>
+                <i class="fi fi-sr-shopping-cart" id="Cart"><span id="cart-quantity">0</span></i>
+            </div>
+
+        </div>
+    </section>
+    <!-----------Header Link --------->
+
+    <!-----------Search Bar ---------->
+    <section class="search" id="search">
+        <div class="container">
+            <div class="input">
+                <input type="search" placeholder="search here...">
+                <i class="fi fi-br-search"></i>
+            </div>
+        </div>
+    </section>
+    <!-----------Search Bar ---------->
+
+    <!-----------Add to cart ---------->
+    <div id="cart" class="cart">
+        <h2>Shopping cart<i class="fi fi-sr-circle-xmark" id="close"></i></h2>
+        <ul id="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </ul>
+        <p>Total: <span id="cart-total">$0.00</span></p>
+    </div>
+    <!-----------Add to cart---------->
+
+    <!-----------Hero area ----------->
+    <section class="hero" id="hero">
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide">
+                    <a href="#"><img src="img/Hero.jpg" alt="Image 1"></a>
+                </div>
+                <div class="slide">
+                    <a href="#"><img src="img/hero2.jpg" alt="Image 2"></a>
+                </div>
+                <div class="slide">
+                    <a href="#"><img src="img/Hero.jpg" alt="Image 3"></a>
+                </div>
+            </div>
+            <button class="prev" id="prev">&#10094;</button>
+            <button class="next" id="next">&#10095;</button>
+        </div>
+        </div>
+    </section>
+    <!-----------Hero area ----------->
+
+    <!-----------Trending  ----------->
+    <section class="trending" id="trending">
+        <h1>trending categories</h1>
+        <!-- Swiper -->
+        <div class="swiper cat-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="data">
+                        <a href="#"><img src="img/c1.png" alt="cate"></a>
+                    </div>
+                    <p>mobile</p>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="data">
+                        <a href="#"><img src="img/c2.png" alt="cate"></a>
+                    </div>
+                    <p>minispeaker</p>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="data">
+                        <a href="#"><img src="img/c3.png" alt="cate"></a>
+                    </div>
+                    <p>tablet</p>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="data">
+                        <a href="#"><img src="img/c4.png" alt="cate"></a>
+                    </div>
+                    <p>shoes</p>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="data">
+                        <a href="#"><img src="img/c5.png" alt="cate"></a>
+                    </div>
+                    <p>airpods</p>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="data">
+                        <a href="#"><img src="img/c1.png" alt="cate"></a>
+                    </div>
+                    <p>mobile</p>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="data">
+                        <a href="#"><img src="img/c2.png" alt="cate"></a>
+                    </div>
+                    <p>minispeaker</p>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="data">
+                        <a href="#"><img src="img/c3.png" alt="cate"></a>
+                    </div>
+                    <p>tablet</p>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="data">
+                        <a href="#"><img src="img/c4.png" alt="cate"></a>
+                    </div>
+                    <p>shoes</p>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="data">
+                        <a href="#"><img src="img/c5.png" alt="cate"></a>
+                    </div>
+                    <p>airpods</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Swiper JS -->
+    </section>
+    <!-----------Trending  ----------->
+
+    <!-----------Two offer------------>
+    <section class="t-offer" id="t-offer">
+        <div class="container">
+            <div class="offer-image">
+                <a href="#"><img src="img/offer1.png" alt="offer"></a>
+            </div>
+            <div class="offer-image">
+                <a href="#"><img src="img/offer2.png" alt="offer"></a>
+            </div>
+        </div>
+    </section>
+    <!-----------Two offer------------>
+
+    <!-----------Product-------------->
+    <section class="pro" id="pro">
+        <h1>TOP PRODUCT</h1>
+        <div class="swiper pro-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide product" data-id="1">
+                    <a href="#" class="add-to-cart"><img src="img/p1.png" alt="Product 1"></a>
+                    <div class="product-text">
+                        <h2>Foot Relief</h2>
+                        <p>$25.99</p>
+                        <span>usd 100<div class="cut">-70%</div></span>
+                        <div class="star">
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <div class="rate">(258)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide product" data-id="1">
+                    <a href="#" class="add-to-cart"><img src="img/p3.png" alt="Product 1"></a>
+                    <div class="product-text">
+                        <h2>CDB Gummies</h2>
+                        <p>$50.99</p>
+                        <span>usd 100<div class="cut">-70%</div></span>
+                        <div class="star">
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <div class="rate">(258)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide product" data-id="1">
+                    <a href="#" class="add-to-cart"><img src="img/p4.png" alt="Product 1"></a>
+                    <div class="product-text">
+                        <h2>Shoe Leather Puma</h2>
+                        <p>$200.99</p>
+                        <span>usd 100<div class="cut">-70%</div></span>
+                        <div class="star">
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <div class="rate">(258)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide product" data-id="1">
+                    <a href="#" class="add-to-cart"><img src="img/p2.png" alt="Product 1"></a>
+                    <div class="product-text">
+                        <h2>Bean Bag Game Seat</h2>
+                        <p>$20.99</p>
+                        <span>usd 100<div class="cut">-70%</div></span>
+                        <div class="star">
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <div class="rate">(258)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide product" data-id="1">
+                    <a href="#" class="add-to-cart"><img src="img/p5.png" alt="Product 1"></a>
+                    <div class="product-text">
+                        <h2>Cloths All Color</h2>
+                        <p>$99.99</p>
+                        <span>usd 100<div class="cut">-70%</div></span>
+                        <div class="star">
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <div class="rate">(258)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------Product-------------->
+
+    <!-----------Offer 2-------------->
+    <section class="pro-offer" id="pro-offer">
+        <a href="#"><img src="img/hero2.jpg" alt=""></a>
+    </section>
+    <!-----------Offer 2-------------->
+
+    <!-----------Product-------------->
+    <section class="pro" id="pro">
+        <h1>popular product</h1>
+        <div class="swiper pro-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide product" data-id="1">
+                    <a href="#" class="add-to-cart"><img src="img/p5.png" alt="Product 1"></a>
+                    <div class="product-text">
+                        <h2>Cloths All Color</h2>
+                        <p>$25.99</p>
+                        <span>usd 100<div class="cut">-70%</div></span>
+                        <div class="star">
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <div class="rate">(258)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide product" data-id="1">
+                    <a href="#" class="add-to-cart"><img src="img/p6.png" alt="Product 1"></a>
+                    <div class="product-text">
+                        <h2>Table Styles</h2>
+                        <p>$50.99</p>
+                        <span>usd 100<div class="cut">-70%</div></span>
+                        <div class="star">
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <div class="rate">(258)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide product" data-id="1">
+                    <a href="#" class="add-to-cart"><img src="img/p7.png" alt="Product 1"></a>
+                    <div class="product-text">
+                        <h2>Neckles Jewllery</h2>
+                        <p>$200.99</p>
+                        <span>usd 100<div class="cut">-70%</div></span>
+                        <div class="star">
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <div class="rate">(258)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide product" data-id="1">
+                    <a href="#" class="add-to-cart"><img src="img/p8.png" alt="Product 1"></a>
+                    <div class="product-text">
+                        <h2>Pen Vape Smoke</h2>
+                        <p>$20.99</p>
+                        <span>usd 100<div class="cut">-70%</div></span>
+                        <div class="star">
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <div class="rate">(258)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide product" data-id="1">
+                    <a href="#" class="add-to-cart"><img src="img/p9.png" alt="Product 1"></a>
+                    <div class="product-text">
+                        <h2>Stylo Shoes</h2>
+                        <p>$99.99</p>
+                        <span>usd 100<div class="cut">-70%</div></span>
+                        <div class="star">
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <div class="rate">(258)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper pro-slider" id="slider-2">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide product" data-id="1">
+                    <a href="#" class="add-to-cart"><img src="img/p10.png" alt="Product 1"></a>
+                    <div class="product-text">
+                        <h2>Cloths All Color</h2>
+                        <p>$25.99</p>
+                        <span>usd 100<div class="cut">-70%</div></span>
+                        <div class="star">
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <div class="rate">(258)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide product" data-id="1">
+                    <a href="#" class="add-to-cart"><img src="img/p11.png" alt="Product 1"></a>
+                    <div class="product-text">
+                        <h2>Table Styles</h2>
+                        <p>$50.99</p>
+                        <span>usd 100<div class="cut">-70%</div></span>
+                        <div class="star">
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <div class="rate">(258)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide product" data-id="1">
+                    <a href="#" class="add-to-cart"><img src="img/p12.png" alt="Product 1"></a>
+                    <div class="product-text">
+                        <h2>Neckles Jewllery</h2>
+                        <p>$200.99</p>
+                        <span>usd 100<div class="cut">-70%</div></span>
+                        <div class="star">
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <div class="rate">(258)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide product" data-id="1">
+                    <a href="#" class="add-to-cart"><img src="img/p8.png" alt="Product 1"></a>
+                    <div class="product-text">
+                        <h2>Pen Vape Smoke</h2>
+                        <p>$20.99</p>
+                        <span>usd 100<div class="cut">-70%</div></span>
+                        <div class="star">
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <div class="rate">(258)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide product" data-id="1">
+                    <a href="#" class="add-to-cart"><img src="img/p1.png" alt="Product 1"></a>
+                    <div class="product-text">
+                        <h2>Foot Relief</h2>
+                        <p>$99.99</p>
+                        <span>usd 100<div class="cut">-70%</div></span>
+                        <div class="star">
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <i class="fi fi-ss-star"></i>
+                            <div class="rate">(258)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------Product-------------->
+
+    <!-----------Offer3--------------->
+    <section class="homeoffer" id="homeoffer">
+        <div class="container">
+            <a href="#"><img src="img/offer.jpg" alt=""></a>
+        </div>
+    </section>
+    <!-----------Offer3--------------->
+
+    <!-----------Footer--------------->
+    <section class="footer" id="footer">
+        <div class="image-footer-logo">
+            <img src="img/footerlogo.png" alt="">
+        </div>
+        <div class="container">
+            <div class="link">
+                <h3>Find Us AT</h3>
+                <a href="#">Term us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Term Of Purchase</a>
+            </div>
+            <div class="link">
+                <h3>Information</h3>
+                <a href="#">Payment Method</a>
+                <a href="#">Shiping Method</a>
+                <a href="#">Return and Funds</a>
+            </div>
+            <div class="link">
+                <h3>Quick Link</h3>
+                <a href="#">home</a>
+                <a href="#">shop</a>
+                <a href="#">offer</a>
+                <a href="#">blog</a>
+                <a href="#">testimonial</a>
+            </div>
+            <div class="link">
+                <h3>News Letters</h3>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="31314080-717d-4803-91ed-5ef2d8a3471a">
+                    <div class="input-email">
+                        <input type="email" id="email" name="email" placeholder="email" required>
+                        <button type="submit"><i class="fi fi-br-search"></i></button>
+                    </div>
+                    <div class="social">
+                        <i class="fi fi-brands-facebook"></i>
+                        <i class="fi fi-brands-instagram"></i>
+                        <i class="fi fi-brands-twitter"></i>
+                        <i class="fi fi-brands-telegram"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="last">
+            <p>copyright by express aorus 2023 all right reserved</p>
+        </div>
+    </section>
+    <!-----------Footer--------------->
+</body>
+<!---------- swiper js ----------->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!---------- swiper js ----------->
+<!---------- javascript ---------->
+<script src="style.js"></script>
+<!---------- javascript ---------->
+<!-----------jquery link --------->
+<script src="jquery-3.6.4.min.js"></script>
+<!-----------jquery link --------->
+<!-----------Aos    link --------->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-----------Aos    link---------->
+<!-- Required for hCaptcha -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
+</html>
